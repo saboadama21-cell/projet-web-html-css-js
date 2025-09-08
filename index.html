@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+       <h1>Boutique Fictive</h1>
+    <nav>
+      <ul>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#produits">Produits</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- bouton mode sombre -->
+    <button id="theme-toggle">🌙 Mode sombre</button>
+
+    </header>
+    <main>
+         <!-- Section A propos -->
+    <section id="apropos">
+      <h2>À propos</h2>
+      <p>Bienvenue dans notre boutique fictive. Projet académique en HTML, CSS et JavaScript.</p>
+    </section>
+
+    <!-- Section Produits -->
+    <section id="produits">
+      <h2>Produits populaires</h2>
+
+      <div class="produit">
+        <img src="image/sac.jpg" alt="Sac Minimal">
+        <h3>Sac Minimal</h3>
+        <p>Un sac élégant pour transporter vos idées (fictif).</p>
+        <p class="prix">Prix : 50 000 FCFA</p>
+      </div>
+
+      <div class="produit">
+        <img src="image/MONTRECLASS.jpg" alt="Montre Connectée">
+        <h3>Montre Connectée</h3>
+        <p>Une montre moderne avec des fonctionnalités fictives.</p>
+        <p class="prix">Prix : 80 000 FCFA</p>
+      </div>
+
+      <div class="produit">
+        <img src="image/casque.png" alt="Casque Confort">
+        <h3>Casque Confort</h3>
+        <p>Un casque audio pour une immersion totale (fictif).</p>
+        <p class="prix">Prix : 65 000 FCFA</p>
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+     <section id="contact">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Envoyer</button>
+        <p class="form-status"></p>
+      </form>
+    </section>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Boutique Fictive — Tous droits réservés.</p>
+
+    </footer>
+</html>

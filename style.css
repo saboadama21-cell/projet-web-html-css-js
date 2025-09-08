@@ -1,0 +1,317 @@
+/* Styles généraux */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9fafb;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* --- HEADER --- */
+header {
+  background: linear-gradient(90deg, #0077ff, #00c4ff);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+margin: 0;
+  font-size: 2.2em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Bouton thème */
+#theme-toggle {
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+  background: #ff9800;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#theme-toggle:hover {
+  background: #e68900;
+}
+
+/* --- SECTIONS --- */
+section {
+  padding: 25px;
+  margin: 15px auto;
+  width: 90%;
+  max-width: 800px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* --- PRODUITS --- */
+.produit {
+  border: 2px solid #0077ff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #f0f8ff;
+  text-align: center;
+}
+
+.produit img {
+  width: 220px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.produit h3 {
+  margin: 10px 0 5px;
+  color: #0077ff;
+}
+
+.produit .prix {
+  font-weight: bold;
+  color: #e91e63;
+  font-size: 1.2em;
+}
+
+/* --- FORMULAIRE --- */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #0077ff;
+  outline: none;
+}
+
+form button {
+  background: #0077ff;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1em;
+}
+form button:hover {
+  background: #005fcc;
+}
+
+.form-status {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* --- FOOTER --- */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(90deg, #0077ff, #00c4ff);
+  color: white;
+  margin-top: 25px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* --- MODE SOMBRE --- */
+body.dark {
+  background: #121212;
+  color: #eee;
+}
+
+body.dark section {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+body.dark .produit {
+  background: #1a1a1a;
+  border-color: #ff9800;
+}
+body.dark .produit h3 {
+  color: #ff9800;
+}
+
+body.dark header,
+body.dark footer {
+  background: linear-gradient(90deg, #222, #000);
+}
+
+body.dark form button {
+  background: #ff9800;
+}
+body.dark form button:hover {
+  background: #e68900;
+}
+
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Bouton thème */
+#theme-toggle {
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+  background: #ff9800;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#theme-toggle:hover {
+  background: #e68900;
+}
+
+/* --- SECTIONS --- */
+section {
+  padding: 25px;
+  margin: 15px auto;
+  width: 90%;
+  max-width: 800px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* --- PRODUITS --- */
+.produit {
+  border: 2px solid #0077ff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #f0f8ff;
+  text-align: center;
+}
+
+.produit img {
+  width: 220px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.produit h3 {
+  margin: 10px 0 5px;
+  color: #0077ff;
+}
+
+.produit .prix {
+  font-weight: bold;
+  color: #e91e63;
+  font-size: 1.2em;
+}
+
+/* --- FORMULAIRE --- */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #0077ff;
+  outline: none;
+}
+
+form button {
+  background: #0077ff;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1em;
+}
+form button:hover {
+  background: #005fcc;
+}
+
+.form-status {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* --- FOOTER --- */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(90deg, #0077ff, #00c4ff);
+  color: white;
+  margin-top: 25px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* --- MODE SOMBRE --- */
+body.dark {
+  background: #121212;
+  color: #eee;
+}
+
+body.dark section {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+body.dark .produit {
+  background: #1a1a1a;
+  border-color: #ff9800;
+}
+body.dark .produit h3 {
+  color: #ff9800;
+}
+
+body.dark header,
+body.dark footer {
+  background: linear-gradient(90deg, #222, #000);
+}
+
+body.dark form button {
+  background: #ff9800;
+}
+body.dark form button:hover {
+  background: #e68900;
+}
+body.dark form button:hover {
+  background: #e68900;
+}
+
